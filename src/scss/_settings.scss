@@ -25,10 +25,15 @@ img {
   height: auto;
 }
 
+.js-focus-visible:focus:not(.focus-visible) {
+  outline: none;
+}
+
 .btn-reset {
   cursor: pointer;
   margin: 0;
   padding: 0;
+  border: none;
   background: transparent;
 }
 
@@ -42,4 +47,61 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1260px;
+}
+
+.main-title {
+  margin: 0 0 24px;
+  font-weight: 700;
+  font-size: rem(72);
+  line-height: 1.3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-gray-900;
+
+  &--home {
+    color: $color-light;
+  }
+
+  span {
+    color: $color-primary;
+  }
+}
+
+.main-descr {
+  margin: 0;
+  font-size: rem(20);
+  line-height: 1.5;
+  color: $color-gray-700;
+
+  &--home {
+    margin-bottom: 61px;
+    color: $color-light;
+  }
+}
+
+.section-offset {
+  padding-top: 121px;
+}
+
+.title {
+  margin: 0 0 24px;
+  font-weight: 700;
+  font-size: rem(46);
+  line-height: 1.3;
+  color: $color-gray-900;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.descr {
+  margin: 0 0 60px;
+  font-size: rem(18);
+  line-height: 1.5;
+  color: $color-gray-700;
+
+  &--center {
+    text-align: center;
+  }
 }

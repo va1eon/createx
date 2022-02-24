@@ -1,0 +1,25 @@
+.btn {
+  padding: 15.5px 39px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: rem(16);
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: $color-light;
+
+  &--fill {
+    border-color: $color-primary;
+    background-color: $color-primary;
+  }
+
+  &--stroke {
+
+    &-light {
+      border-color: $color-light;
+    }
+  }
+}
