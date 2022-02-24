@@ -1,0 +1,96 @@
+.mission {
+  $mission-gap: 94px;
+  background-color: $color-light;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(#{$mission-gap} * 2);
+    margin-bottom: 29px;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 70px;
+    text-align: center;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 48px;
+
+    &:not(:last-child) {
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: calc(-1 * #{$mission-gap});
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: transparent url("../../img/divider.svg") no-repeat center / cover;
+      }
+    }
+
+    &--quality {
+      background-image: url("../../img/quality.svg");
+    }
+
+    &--safety {
+      background-image: url("../../img/safety.svg");
+    }
+
+    &--comfort {
+      background-image: url("../../img/comfort.svg");
+    }
+
+  }
+
+  &__subtitle {
+    margin: 0 0 8px;
+    font-weight: 700;
+    font-size: rem(20);
+    line-height: 1.5;
+    color: $color-gray-900;
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: rem(16);
+    line-height: 1.6;
+    color: $color-gray-700;
+  }
+}
+
+.know-form {
+  position: relative;
+  top: 92px;
+  padding: 48px 60px;
+  border-radius: 4px;
+  box-shadow:
+    0 80px 80px -20px rgba(154, 156, 165, .08),
+    0 30px 24px -10px rgba(154, 156, 165, .05),
+    0 12px 10px -6px rgba(154, 156, 165, .04),
+    0 4px 4px -4px rgba(30, 33, 44, .03);
+  background-color: $color-light;
+
+  &__title {
+    margin: 0 0 32px;
+    font-weight: 700;
+    font-size: rem(28);
+    line-height: 1.5;
+    text-align: center;
+    color: $color-gray-900;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__field {
+    margin-right: 24px;
+  }
+
+  &__btn {
+    padding: 11.5px 28.5px;
+  }
+}
